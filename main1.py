@@ -1,0 +1,28 @@
+file = open("bucket-list.txt", "w")
+file.write("1. Chevorlet Corvette ZX1 is the god !!!!!!!!!!!!!!!!!!!!!:)")
+file.write("2. MasterThe guitar!!:)")
+file.write("Beat my spped record!!:)")
+file.close()
+print("Bucket list saved to bucket-list.txt OP!!!!!!!!!!!!!!!!!!!!!!! :) :) :) :) :) :) :) :) :) :) :)")
+
+file = open("bucket-list.txt", "r")
+content = file.read()
+print("\n===== My Bucket List =====")
+print(content)
+file.close()
+
+file = open("bucket-list.txt", "r")
+lines = file.readlines()
+print(f"You have {len(lines)} in your bucket-list")
+file.close()
+
+file = open("bucket-list.txt", "a")
+file.write("Doge is the real deal for corvette. huh!!!!!!!!!!!!!! :( :( :( :(")
+file.write("Become Like Jenny Hendrix.")
+file.close()
+print("\nMore items added!")
+
+file = open("bucket-list.txt", "r")
+print("===== Updated Bucket List =====")
+print(file.read())
+file.close()
